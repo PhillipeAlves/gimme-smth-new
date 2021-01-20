@@ -1,0 +1,27 @@
+@media screen and (min-width: 576px) {
+  .movies-container,
+  .watched-movies-container {
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 70%;
+    gap: 30px;
+  }
+  .watched-movies h1 {
+    font-size: 4rem;
+  }
+  .movie-card {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.111);
+  }
+  .movie-card:hover {
+    transform: translateY(-12px);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.111);
+  }
+  .movies-page-banner h1 {
+    font-size: 2.5rem;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .movies-container,
+  .watched-movies-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

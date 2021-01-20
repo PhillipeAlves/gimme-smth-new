@@ -1,0 +1,32 @@
+@media screen and (min-width: 576px) {
+  .slide-menu-in {
+    width: 440px;
+    transform: scale(1);
+  }
+  .menu {
+    z-index: -1;
+  }
+  .shift-icon {
+    transform: translateX(-440px) translateY(0) scale(1);
+  }
+  .menu-list-option {
+    width: 440px;
+    padding: 0 0 0 1rem;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .slide-menu-in {
+    width: 50%;
+  }
+  .menu {
+    z-index: -1;
+  }
+  .shift-icon {
+    transform: translateX(0) translateY(0) scale(1);
+  }
+  .menu-list-option {
+    width: 100%;
+    padding: 0;
+  }
+}

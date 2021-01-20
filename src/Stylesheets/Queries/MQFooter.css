@@ -1,0 +1,5 @@
+@media screen and (min-width: 576) {
+  .footer p {
+    max-width: 500px;
+  }
+}

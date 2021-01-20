@@ -1,0 +1,226 @@
+/* Movies Page */
+
+.movies-page-banner {
+  background: linear-gradient(#000000ab, #00000042),
+    url('https://images.unsplash.com/photo-1606579335925-ea67bcbd09c7?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 64px;
+  height: 200px;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.movies-page-banner h1 {
+  color: white;
+  font-size: 2;
+}
+.movies-container {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 20px;
+  padding-top: 350px;
+  margin: 0 auto;
+  max-width: 80%;
+  transform: translateX(0);
+  transition: all 0.3s ease;
+}
+.shift-page {
+  transform: translateX(-440px);
+}
+
+/* Movie UI Card */
+
+.movie-card {
+  position: relative;
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  border-radius: 3px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.111);
+  transition: all 0.5s ease;
+  height: 730px;
+}
+.movie-poster {
+  position: relative;
+  background-size: 300px;
+  background-size: cover;
+  height: 350px;
+  border-radius: 5px 5px 0 0;
+}
+.movie-play-btn {
+  background-color: var(--main);
+  box-shadow: 0 3px 5px var(--shadow);
+  position: absolute;
+  bottom: -9%;
+  right: 10%;
+  height: 60px;
+  width: 60px;
+  line-height: 60px;
+  color: #fff;
+  text-align: center;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  cursor: pointer;
+  transform: translateY(0px);
+  transition: all 0.3s ease;
+}
+.movie-play-icon {
+  padding-top: 3px;
+  padding-left: 4px;
+  font-size: 1.2rem;
+}
+.movie-info {
+  padding: 30px;
+}
+.movie-info h2 {
+  color: #3e4555;
+  font-size: 1.9em;
+  font-weight: 500;
+}
+.movie-description {
+  font-size: 16px;
+  line-height: 24px;
+  color: #404040;
+  text-overflow: ellipsis;
+  word-wrap: break-word;
+}
+.movie-details-btn {
+  padding: 0 15px;
+  line-height: 35px;
+  font-size: 14px;
+  font-weight: 600;
+  border: none;
+  outline: none;
+  background-color: var(--main);
+  box-shadow: 0 3px 5px var(--shadow);
+  color: white;
+  border-radius: 5px;
+  position: absolute;
+  bottom: 2rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.movie-details-btn:hover,
+.movie-play-btn:hover {
+  background-color: var(--hover);
+  box-shadow: 0 10px 15px var(--shadow);
+  transform: translateY(-5px);
+}
+.trailer-btn-unavailable:hover {
+  box-shadow: 0 3px 5px var(--shadow);
+  transform: translateY(0px);
+  cursor: initial;
+}
+.trailer-unavailable-icon {
+  font-size: 2rem;
+  padding-top: 11px;
+  padding-left: 0px;
+}
+.trailer-unavailable-text {
+  position: absolute;
+  bottom: 4.5rem;
+  right: -1.5rem;
+  font-size: 1rem;
+  border: 1px solid white;
+  border-radius: 5px;
+  background-color: var(--glass);
+  color: white;
+  padding: 0.7rem;
+  opacity: 0;
+  transition: all 0.5s ease;
+  line-height: 1rem;
+}
+.trailer-btn-unavailable:hover p {
+  opacity: 1;
+}
+.movie-rating {
+  display: flex;
+  align-items: center;
+}
+.movie-rating p {
+  padding: 1rem 0 1rem 0.1rem;
+  font-size: 0.9rem;
+  color: #404040;
+}
+.movie-rating-icon {
+  font-size: 0.8rem;
+  color: #ffc741;
+}
+
+/* Check Wached Movies */
+
+.movie-checkbox p {
+  position: absolute;
+  bottom: 4.5rem;
+  right: 0.7rem;
+  font-size: 0.8rem;
+  border: 1px solid white;
+  border-radius: 5px;
+  background-color: var(--glass);
+  color: white;
+  max-width: 80px;
+  padding: 0.7rem;
+  opacity: 0;
+  transition: all 0.5s ease;
+  text-align: center;
+}
+.movie-checkbox-icon {
+  position: absolute;
+  bottom: 2.2rem;
+  right: 2rem;
+  font-size: 2rem;
+  color: var(--glass);
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+.movie-checkbox-icon:hover {
+  color: #3e4555;
+}
+.movie-checkbox:hover p {
+  opacity: 1;
+}
+.movie-checked {
+  color: #179b3b;
+}
+.movie-checked:hover {
+  color: #61c67c;
+}
+p.movie-checked-box {
+  background-color: #179b3b;
+}
+
+/* Watched Movies (Landing Page) */
+
+.watched-movies-container {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 20px;
+  max-width: 80%;
+  transform: translateX(0);
+  transition: all 0.3s ease;
+}
+.watched-movies {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 5rem;
+}
+.watched-movies h1 {
+  margin: 7rem auto 4rem auto;
+  font-size: 2rem;
+  color: #3e4555;
+}
+.watched-movies h2 {
+  text-align: center;
+}
+.total-watched-movies {
+  margin: 6rem auto 1rem auto;
+}
+.total-watched-movies span {
+  color: var(--main);
+}

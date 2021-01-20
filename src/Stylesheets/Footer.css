@@ -1,0 +1,32 @@
+.footer {
+  background: linear-gradient(#010a27ab, #010a27ab),
+    url('https://images.unsplash.com/photo-1512149154706-f9b30ded17ad?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=940&q=80');
+  height: 100%;
+  width: 98.9vw;
+  color: white;
+  padding: 6rem 0;
+  text-align: center;
+}
+.footer h2 {
+  margin-bottom: 2rem;
+}
+.footer p {
+  line-height: 1.5rem;
+  font-size: 1.1rem;
+  max-width: 300px;
+  margin: 0 auto;
+  padding-bottom: 3rem;
+}
+.footer-home {
+  padding-top: 3rem;
+  text-align: center;
+  border-top: 1px solid rgb(170, 170, 170);
+}
+.footer-logo {
+  background-size: cover;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin: 0 auto;
+  background-position: center;
+}

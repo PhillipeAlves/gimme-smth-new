@@ -1,0 +1,21 @@
+@media screen and (min-width: 576px) {
+  .search-bar {
+    min-width: 455px;
+    margin-right: 80px;
+  }
+  .search-container h1 {
+    font-size: 7rem;
+  }
+  .search-bar input {
+    /* height: 55px; */
+    /* padding: 10px 20px; */
+    width: 100%;
+    font-size: 1.5rem;
+  }
+  .search-icon {
+    right: -80px;
+  }
+  .dropdown-options {
+    right: -80px;
+  }
+}

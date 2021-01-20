@@ -1,0 +1,38 @@
+.not-found {
+  background-image: url('https://images.unsplash.com/photo-1606579335925-ea67bcbd09c7?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1950&q=80');
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.not-found-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.92);
+  height: 300px;
+  width: 400px;
+  border-radius: 5px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.111);
+}
+.not-found button {
+  padding: 0 15px;
+  line-height: 35px;
+  font-size: 14px;
+  font-weight: 600;
+  border: none;
+  outline: none;
+  background-color: var(--main);
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+.not-found button:hover {
+  background-color: #a55fc7;
+}
+.not-found p {
+  margin: 2rem;
+}

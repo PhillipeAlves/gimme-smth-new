@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Almarai:wght@300&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Almarai', sans-serif;
+  font-weight: lighter;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  scroll-behavior: smooth;
+}
+html {
+  min-height: 100vh;
+}
+:root {
+  --glass: #000000ab;
+  --main: #9f0404;
+  --hover: #b72a2a;
+  --shadow: #0000006c;
+  --light: #f8f9fa;
+  --dark: #2a2a2a;
+  --breakpoint-xs: 0;
+  --breakpoint-sm: 576px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 992px;
+  --breakpoint-xl: 1200px;
+}

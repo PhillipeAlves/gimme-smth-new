@@ -1,0 +1,17 @@
+@media screen and (min-width: 576px) {
+  .martins-logo-navbar {
+    left: unset;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .navbar {
+    padding: 1.5rem 2rem;
+  }
+  .navbar-menu {
+    display: flex;
+  }
+  .login-btn {
+    display: initial;
+  }
+}
