@@ -27,7 +27,7 @@ The details button in the movie card opens a new page, redirecting the user to t
 
 </br>
 
-> Note: The menu is yet to get developed.
+> Note: The menu is yet to be developed.
 
 </br>
 
