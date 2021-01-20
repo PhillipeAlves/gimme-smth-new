@@ -25,6 +25,8 @@ The result is then presented in a new page that contains basic information about
 
 The details button in the movie card opens a new page, redirecting the user to the IMDB's info about it.
 
+</br>
+
 > Note: The menu is yet to get developed.
 
 </br>
